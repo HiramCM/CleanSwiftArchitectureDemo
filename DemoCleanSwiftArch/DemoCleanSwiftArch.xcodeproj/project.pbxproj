@@ -17,6 +17,12 @@
 		5C09DF6C27272D73003C39A6 /* DemoCleanSwiftArchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09DF6B27272D73003C39A6 /* DemoCleanSwiftArchTests.swift */; };
 		5C09DF7627272D73003C39A6 /* DemoCleanSwiftArchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09DF7527272D73003C39A6 /* DemoCleanSwiftArchUITests.swift */; };
 		5C09DF7827272D73003C39A6 /* DemoCleanSwiftArchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09DF7727272D73003C39A6 /* DemoCleanSwiftArchUITestsLaunchTests.swift */; };
+		5C09DF8A27272FE8003C39A6 /* ListOrdersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09DF8927272FE8003C39A6 /* ListOrdersVC.swift */; };
+		5C09DF8C27273075003C39A6 /* ListOrdersModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09DF8B27273075003C39A6 /* ListOrdersModels.swift */; };
+		5C09DF8E272731F8003C39A6 /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09DF8D272731F8003C39A6 /* OrderModel.swift */; };
+		5C09DF9027273733003C39A6 /* ListOrdersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09DF8F27273733003C39A6 /* ListOrdersInteractor.swift */; };
+		5C09DF9227273AAD003C39A6 /* ListOrdersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09DF9127273AAD003C39A6 /* ListOrdersPresenter.swift */; };
+		5C09DF94272740DB003C39A6 /* OrdersWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09DF93272740DB003C39A6 /* OrdersWorker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,12 @@
 		5C09DF7127272D73003C39A6 /* DemoCleanSwiftArchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoCleanSwiftArchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C09DF7527272D73003C39A6 /* DemoCleanSwiftArchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCleanSwiftArchUITests.swift; sourceTree = "<group>"; };
 		5C09DF7727272D73003C39A6 /* DemoCleanSwiftArchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCleanSwiftArchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5C09DF8927272FE8003C39A6 /* ListOrdersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersVC.swift; sourceTree = "<group>"; };
+		5C09DF8B27273075003C39A6 /* ListOrdersModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersModels.swift; sourceTree = "<group>"; };
+		5C09DF8D272731F8003C39A6 /* OrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
+		5C09DF8F27273733003C39A6 /* ListOrdersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersInteractor.swift; sourceTree = "<group>"; };
+		5C09DF9127273AAD003C39A6 /* ListOrdersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersPresenter.swift; sourceTree = "<group>"; };
+		5C09DF93272740DB003C39A6 /* OrdersWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersWorker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +113,10 @@
 		5C09DF5027272D6F003C39A6 /* DemoCleanSwiftArch */ = {
 			isa = PBXGroup;
 			children = (
+				5C09DF8427272E33003C39A6 /* Models */,
+				5C09DF8527272E3E003C39A6 /* Services */,
+				5C09DF8627272E48003C39A6 /* Workers */,
+				5C09DF8727272E56003C39A6 /* Scenes */,
 				5C09DF5127272D6F003C39A6 /* AppDelegate.swift */,
 				5C09DF5327272D6F003C39A6 /* SceneDelegate.swift */,
 				5C09DF5527272D6F003C39A6 /* ViewController.swift */,
@@ -128,6 +144,48 @@
 				5C09DF7727272D73003C39A6 /* DemoCleanSwiftArchUITestsLaunchTests.swift */,
 			);
 			path = DemoCleanSwiftArchUITests;
+			sourceTree = "<group>";
+		};
+		5C09DF8427272E33003C39A6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5C09DF8D272731F8003C39A6 /* OrderModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5C09DF8527272E3E003C39A6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5C09DF8627272E48003C39A6 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				5C09DF93272740DB003C39A6 /* OrdersWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		5C09DF8727272E56003C39A6 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				5C09DF8827272F28003C39A6 /* ListOrdersScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		5C09DF8827272F28003C39A6 /* ListOrdersScene */ = {
+			isa = PBXGroup;
+			children = (
+				5C09DF8927272FE8003C39A6 /* ListOrdersVC.swift */,
+				5C09DF8B27273075003C39A6 /* ListOrdersModels.swift */,
+				5C09DF8F27273733003C39A6 /* ListOrdersInteractor.swift */,
+				5C09DF9127273AAD003C39A6 /* ListOrdersPresenter.swift */,
+			);
+			path = ListOrdersScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +319,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C09DF8C27273075003C39A6 /* ListOrdersModels.swift in Sources */,
 				5C09DF5627272D6F003C39A6 /* ViewController.swift in Sources */,
 				5C09DF5227272D6F003C39A6 /* AppDelegate.swift in Sources */,
+				5C09DF9027273733003C39A6 /* ListOrdersInteractor.swift in Sources */,
+				5C09DF8E272731F8003C39A6 /* OrderModel.swift in Sources */,
 				5C09DF5C27272D6F003C39A6 /* DemoCleanSwiftArch.xcdatamodeld in Sources */,
+				5C09DF9227273AAD003C39A6 /* ListOrdersPresenter.swift in Sources */,
 				5C09DF5427272D6F003C39A6 /* SceneDelegate.swift in Sources */,
+				5C09DF94272740DB003C39A6 /* OrdersWorker.swift in Sources */,
+				5C09DF8A27272FE8003C39A6 /* ListOrdersVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
