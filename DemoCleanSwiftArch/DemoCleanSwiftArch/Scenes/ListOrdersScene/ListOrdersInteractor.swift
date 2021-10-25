@@ -17,6 +17,9 @@ protocol ListOrdersDataStore {
 
 class ListOrdersInteractor: ListOrdersBusinessLogic, ListOrdersDataStore {
     
+    var presenter:ListOrdersPresentationLogic?
+    var ordersWorker = OrdersWorker(ordersStore: <#T##OrdersStoreProtocol#>)
+    
     var orders: [OrderModel]?
     
     func fetchOrders(request: ListOrders.FetchOrders.Request) {

@@ -23,6 +23,7 @@
 		5C09DF9027273733003C39A6 /* ListOrdersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09DF8F27273733003C39A6 /* ListOrdersInteractor.swift */; };
 		5C09DF9227273AAD003C39A6 /* ListOrdersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09DF9127273AAD003C39A6 /* ListOrdersPresenter.swift */; };
 		5C09DF94272740DB003C39A6 /* OrdersWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09DF93272740DB003C39A6 /* OrdersWorker.swift */; };
+		5C09DF9627276013003C39A6 /* OrdersMemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09DF9527276013003C39A6 /* OrdersMemStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		5C09DF8F27273733003C39A6 /* ListOrdersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersInteractor.swift; sourceTree = "<group>"; };
 		5C09DF9127273AAD003C39A6 /* ListOrdersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersPresenter.swift; sourceTree = "<group>"; };
 		5C09DF93272740DB003C39A6 /* OrdersWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersWorker.swift; sourceTree = "<group>"; };
+		5C09DF9527276013003C39A6 /* OrdersMemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersMemStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 		5C09DF8527272E3E003C39A6 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				5C09DF9527276013003C39A6 /* OrdersMemStore.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				5C09DF8C27273075003C39A6 /* ListOrdersModels.swift in Sources */,
 				5C09DF5627272D6F003C39A6 /* ViewController.swift in Sources */,
 				5C09DF5227272D6F003C39A6 /* AppDelegate.swift in Sources */,
+				5C09DF9627276013003C39A6 /* OrdersMemStore.swift in Sources */,
 				5C09DF9027273733003C39A6 /* ListOrdersInteractor.swift in Sources */,
 				5C09DF8E272731F8003C39A6 /* OrderModel.swift in Sources */,
 				5C09DF5C27272D6F003C39A6 /* DemoCleanSwiftArch.xcdatamodeld in Sources */,
