@@ -24,6 +24,10 @@
 		5C09DF9227273AAD003C39A6 /* ListOrdersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09DF9127273AAD003C39A6 /* ListOrdersPresenter.swift */; };
 		5C09DF94272740DB003C39A6 /* OrdersWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09DF93272740DB003C39A6 /* OrdersWorker.swift */; };
 		5C09DF9627276013003C39A6 /* OrdersMemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09DF9527276013003C39A6 /* OrdersMemStore.swift */; };
+		5CEBE84527286CB7006B0B90 /* ListOrdersWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEBE84427286CB7006B0B90 /* ListOrdersWorker.swift */; };
+		5CEBE8472728732F006B0B90 /* ListOrdersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEBE8462728732F006B0B90 /* ListOrdersRouter.swift */; };
+		5CEBE84A27287CA7006B0B90 /* CreateOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEBE84927287CA7006B0B90 /* CreateOrderVC.swift */; };
+		5CEBE84C27287E37006B0B90 /* CreateOrderModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEBE84B27287E37006B0B90 /* CreateOrderModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +69,10 @@
 		5C09DF9127273AAD003C39A6 /* ListOrdersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersPresenter.swift; sourceTree = "<group>"; };
 		5C09DF93272740DB003C39A6 /* OrdersWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersWorker.swift; sourceTree = "<group>"; };
 		5C09DF9527276013003C39A6 /* OrdersMemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersMemStore.swift; sourceTree = "<group>"; };
+		5CEBE84427286CB7006B0B90 /* ListOrdersWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersWorker.swift; sourceTree = "<group>"; };
+		5CEBE8462728732F006B0B90 /* ListOrdersRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersRouter.swift; sourceTree = "<group>"; };
+		5CEBE84927287CA7006B0B90 /* CreateOrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderVC.swift; sourceTree = "<group>"; };
+		5CEBE84B27287E37006B0B90 /* CreateOrderModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				5C09DF8827272F28003C39A6 /* ListOrdersScene */,
+				5CEBE84827287C2B006B0B90 /* CreateOrderScene */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -187,8 +196,19 @@
 				5C09DF8B27273075003C39A6 /* ListOrdersModels.swift */,
 				5C09DF8F27273733003C39A6 /* ListOrdersInteractor.swift */,
 				5C09DF9127273AAD003C39A6 /* ListOrdersPresenter.swift */,
+				5CEBE84427286CB7006B0B90 /* ListOrdersWorker.swift */,
+				5CEBE8462728732F006B0B90 /* ListOrdersRouter.swift */,
 			);
 			path = ListOrdersScene;
+			sourceTree = "<group>";
+		};
+		5CEBE84827287C2B006B0B90 /* CreateOrderScene */ = {
+			isa = PBXGroup;
+			children = (
+				5CEBE84927287CA7006B0B90 /* CreateOrderVC.swift */,
+				5CEBE84B27287E37006B0B90 /* CreateOrderModels.swift */,
+			);
+			path = CreateOrderScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,14 +344,18 @@
 			files = (
 				5C09DF8C27273075003C39A6 /* ListOrdersModels.swift in Sources */,
 				5C09DF5627272D6F003C39A6 /* ViewController.swift in Sources */,
+				5CEBE84527286CB7006B0B90 /* ListOrdersWorker.swift in Sources */,
 				5C09DF5227272D6F003C39A6 /* AppDelegate.swift in Sources */,
 				5C09DF9627276013003C39A6 /* OrdersMemStore.swift in Sources */,
+				5CEBE84A27287CA7006B0B90 /* CreateOrderVC.swift in Sources */,
 				5C09DF9027273733003C39A6 /* ListOrdersInteractor.swift in Sources */,
 				5C09DF8E272731F8003C39A6 /* OrderModel.swift in Sources */,
 				5C09DF5C27272D6F003C39A6 /* DemoCleanSwiftArch.xcdatamodeld in Sources */,
 				5C09DF9227273AAD003C39A6 /* ListOrdersPresenter.swift in Sources */,
 				5C09DF5427272D6F003C39A6 /* SceneDelegate.swift in Sources */,
 				5C09DF94272740DB003C39A6 /* OrdersWorker.swift in Sources */,
+				5CEBE84C27287E37006B0B90 /* CreateOrderModels.swift in Sources */,
+				5CEBE8472728732F006B0B90 /* ListOrdersRouter.swift in Sources */,
 				5C09DF8A27272FE8003C39A6 /* ListOrdersVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

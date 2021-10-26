@@ -18,12 +18,18 @@ protocol ListOrdersDataStore {
 class ListOrdersInteractor: ListOrdersBusinessLogic, ListOrdersDataStore {
     
     var presenter:ListOrdersPresentationLogic?
-    var ordersWorker = OrdersWorker(ordersStore: <#T##OrdersStoreProtocol#>)
+    var ordersWorker = OrdersWorker(ordersStore: OrdersMemStore())
     
     var orders: [OrderModel]?
     
+    //MARK: - Fetch Orders
+    
     func fetchOrders(request: ListOrders.FetchOrders.Request) {
-        
+        ordersWorker.fetchOrders { (orders) -> Void in
+            self.orders = orders
+            let response = ListOrders.FetchOrders.Response(orders: orders)
+            self.presenter?.presentFetchedOrders(response: response)
+        }
     }
     
 }
